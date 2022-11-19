@@ -51,3 +51,8 @@ $posts = ['First Post'];
 if(!empty($posts)) {
   echo $posts[0];
 }
+
+$default_message = 'there is no post 1';
+$coalescing = $posts[1] ?? $default_message;
+
+echo $coalescing;
