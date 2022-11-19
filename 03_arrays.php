@@ -35,3 +35,20 @@ $person = [
 ];
 
 echo $person['first_name'];
+
+$people = [
+  [
+    'first_name' => 'Brad',
+    'last_name' => 'Traversy',
+  ],
+  [
+    'first_name' => 'alex',
+    'last_name' => 'govea'
+  ],
+  [
+    'first_name' => 'alex',
+    'last_name' => 'govea'
+  ]
+];
+
+var_dump(json_encode($people));
