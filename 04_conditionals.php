@@ -33,3 +33,21 @@ if (condition) {
 
 
 /* -------- Switch Statements ------- */
+
+
+$age = 20;
+
+if ($age >= 19) {
+  //echo 'You are old enough to vote';
+};
+
+$votingRights = $age > 25 ? 'you should vote' : 'you should not vote';
+
+//echo($votingRights);
+
+
+$posts = ['First Post'];
+
+if(!empty($posts)) {
+  echo $posts[0];
+}
