@@ -1,4 +1,14 @@
 <?php
+
+$y = "from php function";
+
+function registerUser($email = "incognito@gmailcom")
+{
+  global $y;
+  return "Hello world {$y}. <br /> {$email}";
+};
+
+echo registerUser('alex@gmail.com');
 /* ------------ Functions ----------- */
 
 /*
