@@ -22,3 +22,7 @@ echo registerUser('alex@gmail.com');
     // code to be executed
   }
 */
+
+$anonFunction = fn () =>  '<br />Anon function';
+
+echo $anonFunction();
