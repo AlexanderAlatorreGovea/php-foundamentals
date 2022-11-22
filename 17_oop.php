@@ -41,4 +41,25 @@ class User
 $user = new User("Alex", "alex@gmail.com", 'safsfdivsda11');
 $user->name = 'Brad';
 
-var_dump($user);
+//var_dump($user);
+echo $user->getName();
+echo $user->login();
+
+echo "<br/>";
+
+class Employee extends User {
+  public function __construct($name, $email, $password, $title) {
+    parent::__construct($name, $email, $password);
+    $this->title = $title;
+  }
+
+  public function getTitle() {
+    return $this->title;
+  }
+}
+
+$employee1 = new Employee('John','johndoe@gmail.com','123456','Manager');
+echo $employee1->getTitle();
+
+echo "<br><br>";
+echo $employee1->login();
