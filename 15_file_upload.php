@@ -1,5 +1,7 @@
 <?php
 /* ----------- File upload ---------- */
+$allowed_ext = array('png', 'jpg', 'jpeg', 'gif');
+
 if (isset($_POST['submit'])) {
   // Check if file was uploaded
   if (!empty($_FILES['upload']['name'])) {
